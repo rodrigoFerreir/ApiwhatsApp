@@ -13,7 +13,7 @@ const postInfo = async () => {
           `https://web.whatsapp.com/send?phone=${code}${phone}&text=${message}`
         );
         try {
-        await page.waitForNavigation();
+        //await page.waitForNavigation();
       } catch (e) {
         await page.evaluate(() => {
           window.alert(
