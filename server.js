@@ -1,7 +1,9 @@
 const express = require('express');
 const routes = require('./routes');
+const bodyparser = require('body-parser');
 
 const app = express();
+app.use(bodyparser.json())
 app.use(routes)
 
 
@@ -42,6 +44,6 @@ app.use(routes)
 // });
 
 
-app.listen(process.env.PORT || 5000, function () {
+app.listen(process.env.PORT || 3002, function () {
     console.log('Server rodando na porta: ' + this.address().port)
 })

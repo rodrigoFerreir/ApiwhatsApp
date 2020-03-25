@@ -3,7 +3,6 @@ const routes = Router();
 const Methods = require('./methods')
 
   routes.get('/teste', Methods.test);
-  //routes.post('/teste', Methods.testClick)
 
   routes.get('/', Methods.openPage);
 
